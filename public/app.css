@@ -1,0 +1,68 @@
+ /* Estilos para o navbar */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.content {
+    margin-top: 60px; /* Para evitar que o conteúdo fique sob o navbar */
+    padding: 20px;
+}
+/* Estilo para a lista de PDFs */
+.pdfs_ {
+list-style-type: none; /* Remove os marcadores de lista padrão */
+padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilo para cada item da lista */
+.pdfs_ li {
+margin-bottom: 10px;
+display: flex;
+gap: 1rem;
+padding: 10px;
+align-items: center;
+}
+
+/* Estilo para o link 'Ver' */
+.pdfs_ li a {
+text-decoration: none; /* Remove a decoração de link padrão */
+color: #007bff; /* Cor do link azul */
+margin-right: 10px; /* Espaçamento à direita */
+}
+
+/* Estilo para o botão 'Deletar' */
+.pdfs_ li button {
+background-color: #dc3545; /* Cor de fundo vermelha */
+color: #fff; /* Cor do texto branca */
+border: none; /* Remove a borda */
+padding: 5px 10px; /* Preenchimento interno */
+cursor: pointer; /* Cursor do mouse */
+transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+/* Estilo de foco do botão 'Deletar' */
+.pdfs_ li button:focus {
+outline: none; /* Remove o contorno do foco */
+}
+
+/* Estilo de hover do botão 'Deletar' */
+.pdfs_ li button:hover {
+background-color: #c82333; /* Cor de fundo vermelha mais escura no hover */
+}
